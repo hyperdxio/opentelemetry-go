@@ -3,11 +3,11 @@ package otelslog
 import (
 	"bytes"
 	"context"
-	"github.com/agoda-com/opentelemetry-logs-go/exporters/stdout/stdoutlogs"
+	"github.com/hyperdxio/opentelemetry-logs-go/exporters/stdout/stdoutlogs"
 	"github.com/stretchr/testify/assert"
 	"log/slog"
 
-	sdk "github.com/agoda-com/opentelemetry-logs-go/sdk/logs"
+	sdk "github.com/hyperdxio/opentelemetry-logs-go/sdk/logs"
 	"go.opentelemetry.io/otel/sdk/resource"
 	semconv "go.opentelemetry.io/otel/semconv/v1.21.0"
 	"os"
@@ -50,5 +50,5 @@ func TestNewOtelHandler(t *testing.T) {
 
 	actual := buf.String()
 
-	assert.Contains(t, actual, "INFO hello slog [scopeInfo: github.com/agoda-com/otelslog:0.0.1] {host.name=CLX4NV72V6, service.name=otelslog-example, service.version=1.0.0, myKey=myValue}")
+	assert.Contains(t, actual, "INFO hello slog [scopeInfo: github.com/hyperdxio/otelslog:0.0.1] {host.name=CLX4NV72V6, service.name=otelslog-example, service.version=1.0.0, myKey=myValue}")
 }

@@ -18,7 +18,7 @@ package otelslog
 
 import (
 	"context"
-	otel "github.com/agoda-com/opentelemetry-logs-go/logs"
+	otel "github.com/hyperdxio/opentelemetry-logs-go/logs"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/sdk/instrumentation"
 	semconv "go.opentelemetry.io/otel/semconv/v1.21.0"
@@ -29,7 +29,7 @@ import (
 )
 
 const (
-	instrumentationName = "github.com/agoda-com/otelslog"
+	instrumentationName = "github.com/hyperdxio/otelslog"
 )
 
 // OtelHandler is a Handler that writes Records to OTLP

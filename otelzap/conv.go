@@ -17,7 +17,7 @@ limitations under the License.
 package otelzap
 
 import (
-	otel "github.com/agoda-com/opentelemetry-logs-go/logs"
+	otel "github.com/hyperdxio/opentelemetry-logs-go/logs"
 	"go.opentelemetry.io/otel/attribute"
 	semconv "go.opentelemetry.io/otel/semconv/v1.20.0"
 	"go.uber.org/zap/zapcore"

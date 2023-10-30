@@ -10,8 +10,8 @@ import (
 	"github.com/rs/zerolog/log"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/agoda-com/opentelemetry-logs-go/exporters/stdout/stdoutlogs"
-	sdk "github.com/agoda-com/opentelemetry-logs-go/sdk/logs"
+	"github.com/hyperdxio/opentelemetry-logs-go/exporters/stdout/stdoutlogs"
+	sdk "github.com/hyperdxio/opentelemetry-logs-go/sdk/logs"
 	"go.opentelemetry.io/otel/sdk/resource"
 	oteltrace "go.opentelemetry.io/otel/sdk/trace"
 	semconv "go.opentelemetry.io/otel/semconv/v1.21.0"
@@ -54,7 +54,7 @@ func TestZerologHook(t *testing.T) {
 	actual := buf.String()
 	assert.Contains(t, actual, "INFO")                                                               // ensure th log level
 	assert.Contains(t, actual, "hello zerolog")                                                      // ensure the message
-	assert.Contains(t, actual, "scopeInfo: github.com/agoda-com/opentelemetry-go/otelzerolog:0.0.1") // ensure the scope info
+	assert.Contains(t, actual, "scopeInfo: github.com/hyperdxio/opentelemetry-go/otelzerolog:0.0.1") // ensure the scope info
 	assert.Contains(t, actual, "service.name=otelzerolog-example")                                   // ensure the resource attributes
 	assert.Contains(t, actual, "service.version=1.0.0")                                              // ensure the resource attributes
 	assert.Contains(t, actual, "level=info")                                                         // ensure the severity attributes

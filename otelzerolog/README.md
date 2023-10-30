@@ -18,7 +18,7 @@ This project aims to integrate OpenTelemetry, a set of APIs, libraries, agents, 
 ## Installation
 
 ```console
-go get -u github.com/agoda-com/opentelemetry-go/otelzerolog
+go get -u github.com/hyperdxio/opentelemetry-go/otelzerolog
 ```
 
 ## Usage

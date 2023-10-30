@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"time"
 
-	otel "github.com/agoda-com/opentelemetry-logs-go/logs" // use otel so that when otel is stable, we can just change the import path
+	otel "github.com/hyperdxio/opentelemetry-logs-go/logs" // use otel so that when otel is stable, we can just change the import path
 	"github.com/rs/zerolog"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/sdk/instrumentation"
@@ -31,7 +31,7 @@ import (
 )
 
 const (
-	instrumentationName = "github.com/agoda-com/opentelemetry-go/otelzerolog"
+	instrumentationName = "github.com/hyperdxio/opentelemetry-go/otelzerolog"
 )
 
 var instrumentationScope = instrumentation.Scope{

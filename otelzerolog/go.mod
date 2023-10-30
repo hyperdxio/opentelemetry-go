@@ -1,9 +1,9 @@
-module github.com/agoda-com/opentelemetry-go/otelzerolog
+module github.com/hyperdxio/opentelemetry-go/otelzerolog
 
 go 1.20
 
 require (
-	github.com/agoda-com/opentelemetry-logs-go v0.3.0
+	github.com/hyperdxio/opentelemetry-logs-go v0.3.0
 	github.com/rs/zerolog v1.30.0
 	github.com/stretchr/testify v1.8.4
 	go.opentelemetry.io/otel v1.18.0

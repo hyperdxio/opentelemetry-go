@@ -13,7 +13,7 @@ package main
 
 import (
 	"context"
-	"github.com/agoda-com/opentelemetry-go/otelslog"
+	"github.com/hyperdxio/opentelemetry-go/otelslog"
 	"log/slog"
 )
 

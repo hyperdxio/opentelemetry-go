@@ -13,7 +13,7 @@ package main
 
 import (
 	"context"
-	"github.com/agoda-com/opentelemetry-go/otelzap"
+	"github.com/hyperdxio/opentelemetry-go/otelzap"
 	"go.uber.org/zap"
 )
 

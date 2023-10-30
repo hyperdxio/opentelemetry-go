@@ -21,9 +21,9 @@ package main
 
 import (
 	"context"
-	"github.com/agoda-com/opentelemetry-logs-go/exporters/otlp/otlplogs"
-	sdk "github.com/agoda-com/opentelemetry-logs-go/sdk/logs"
-	"github.com/agoda-com/otelslog"
+	"github.com/hyperdxio/opentelemetry-logs-go/exporters/otlp/otlplogs"
+	sdk "github.com/hyperdxio/opentelemetry-logs-go/sdk/logs"
+	"github.com/hyperdxio/otelslog"
 	"go.opentelemetry.io/otel/sdk/resource"
 	semconv "go.opentelemetry.io/otel/semconv/v1.21.0"
 	"log/slog"
