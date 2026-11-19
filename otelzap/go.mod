@@ -1,3 +1,4 @@
+// Deprecated: no longer maintained; use go.opentelemetry.io/contrib/bridges/otelzap.
 module github.com/hyperdxio/opentelemetry-go/otelzap
 
 go 1.20

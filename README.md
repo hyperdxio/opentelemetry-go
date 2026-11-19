@@ -1,6 +1,23 @@
 Open-telemetry extensions for go language
 ---
 
+> **Deprecated:** these loggers are no longer maintained. Use the upstream
+> [OpenTelemetry Go](https://opentelemetry.io/docs/languages/go/) log bridges
+> instead, with the
+> [`go.opentelemetry.io/otel/sdk/log`](https://pkg.go.dev/go.opentelemetry.io/otel/sdk/log)
+> logs SDK and the
+> [`otlploghttp`](https://pkg.go.dev/go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp)
+> exporter. They are more up to date and send to ClickStack over OTLP: set
+> `OTEL_EXPORTER_OTLP_ENDPOINT` to your ClickStack endpoint and
+> `OTEL_EXPORTER_OTLP_HEADERS=authorization=<ingestion key>`.
+>
+> - `otelslog`: [`go.opentelemetry.io/contrib/bridges/otelslog`](https://pkg.go.dev/go.opentelemetry.io/contrib/bridges/otelslog)
+> - `otelzap`: [`go.opentelemetry.io/contrib/bridges/otelzap`](https://pkg.go.dev/go.opentelemetry.io/contrib/bridges/otelzap)
+> - `otelzerolog`: there is no upstream zerolog bridge. Switch to a logger
+>   that has one, or write zerolog's JSON output to stdout or a file and
+>   collect it with the OpenTelemetry Collector's
+>   [filelog receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/filelogreceiver).
+
 ## Open-telemetry Loggers
 
 | Logger                     | Version | Minimal go version |

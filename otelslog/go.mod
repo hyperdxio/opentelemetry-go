@@ -1,3 +1,4 @@
+// Deprecated: no longer maintained; use go.opentelemetry.io/contrib/bridges/otelslog.
 module github.com/hyperdxio/opentelemetry-go/otelslog
 
 go 1.21
