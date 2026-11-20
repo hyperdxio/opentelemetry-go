@@ -1,3 +1,4 @@
+// Deprecated: no longer maintained; OpenTelemetry has no upstream zerolog bridge.
 module github.com/hyperdxio/opentelemetry-go/otelzerolog
 
 go 1.20

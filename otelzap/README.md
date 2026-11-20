@@ -1,5 +1,11 @@
 # otelzap
 
+> **Deprecated:** this module is no longer maintained. Use the upstream
+> [`go.opentelemetry.io/contrib/bridges/otelzap`](https://pkg.go.dev/go.opentelemetry.io/contrib/bridges/otelzap)
+> bridge with the
+> [OpenTelemetry Go](https://opentelemetry.io/docs/languages/go/) logs SDK
+> instead. It sends to ClickStack over OTLP.
+
 Zap logger with OpenTelemetry support. This logger will export LogRecord's in OTLP format.
 
 ## Quick start

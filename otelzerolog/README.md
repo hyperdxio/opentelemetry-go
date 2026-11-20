@@ -1,5 +1,13 @@
 # otelzerolog
 
+> **Deprecated:** this module is no longer maintained, and OpenTelemetry has
+> no upstream zerolog bridge. Switch to a logger that has one (`log/slog`, zap,
+> logrus or logr; see the
+> [upstream bridges](https://github.com/open-telemetry/opentelemetry-go-contrib/tree/main/bridges)),
+> or write zerolog's JSON output to stdout or a file and collect it with the
+> OpenTelemetry Collector's
+> [filelog receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/filelogreceiver).
+
 ## Description
 
 This project aims to integrate OpenTelemetry, a set of APIs, libraries, agents, and collector services to capture distributed traces and metrics from your application, with Zerolog, a zero-allocation JSON logger in Go, for monitoring and managing your application's performance.

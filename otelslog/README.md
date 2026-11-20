@@ -1,5 +1,11 @@
 # otelslog
 
+> **Deprecated:** this module is no longer maintained. Use the upstream
+> [`go.opentelemetry.io/contrib/bridges/otelslog`](https://pkg.go.dev/go.opentelemetry.io/contrib/bridges/otelslog)
+> bridge with the
+> [OpenTelemetry Go](https://opentelemetry.io/docs/languages/go/) logs SDK
+> instead. It sends to ClickStack over OTLP.
+
 log/slog handler for OTel
 
 ## Quick start
